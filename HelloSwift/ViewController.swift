@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var mainLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        mainLabel.text = "Hello World";
+        var person:Person = Person();
+        person.printname();
+        
+        var mutant:Mutant = Mutant();
+        println((mutant.power));
+        
     }
 
     override func didReceiveMemoryWarning() {

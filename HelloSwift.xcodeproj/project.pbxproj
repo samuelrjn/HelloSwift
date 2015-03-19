@@ -11,8 +11,8 @@
 		7ED2479A1AB999C0001C2C1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED247991AB999C0001C2C1B /* ViewController.swift */; };
 		7ED2479D1AB999C0001C2C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED2479B1AB999C0001C2C1B /* Main.storyboard */; };
 		7ED2479F1AB999C0001C2C1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED2479E1AB999C0001C2C1B /* Images.xcassets */; };
-		7ED247A21AB999C0001C2C1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED247A01AB999C0001C2C1B /* LaunchScreen.xib */; };
 		7ED247AE1AB999C0001C2C1B /* HelloSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED247AD1AB999C0001C2C1B /* HelloSwiftTests.swift */; };
+		7ED247B81AB99BCF001C2C1B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED247B71AB99BCF001C2C1B /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 		7ED247991AB999C0001C2C1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7ED2479C1AB999C0001C2C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ED2479E1AB999C0001C2C1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7ED247A11AB999C0001C2C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7ED247A71AB999C0001C2C1B /* HelloSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED247AC1AB999C0001C2C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED247AD1AB999C0001C2C1B /* HelloSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftTests.swift; sourceTree = "<group>"; };
+		7ED247B71AB99BCF001C2C1B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 				7ED247991AB999C0001C2C1B /* ViewController.swift */,
 				7ED2479B1AB999C0001C2C1B /* Main.storyboard */,
 				7ED2479E1AB999C0001C2C1B /* Images.xcassets */,
-				7ED247A01AB999C0001C2C1B /* LaunchScreen.xib */,
 				7ED247951AB999C0001C2C1B /* Supporting Files */,
+				7ED247B71AB99BCF001C2C1B /* Person.swift */,
 			);
 			path = HelloSwift;
 			sourceTree = "<group>";
@@ -193,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ED2479D1AB999C0001C2C1B /* Main.storyboard in Resources */,
-				7ED247A21AB999C0001C2C1B /* LaunchScreen.xib in Resources */,
 				7ED2479F1AB999C0001C2C1B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED247B81AB99BCF001C2C1B /* Person.swift in Sources */,
 				7ED2479A1AB999C0001C2C1B /* ViewController.swift in Sources */,
 				7ED247981AB999C0001C2C1B /* AppDelegate.swift in Sources */,
 			);
@@ -242,14 +242,6 @@
 				7ED2479C1AB999C0001C2C1B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7ED247A01AB999C0001C2C1B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7ED247A11AB999C0001C2C1B /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -339,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +401,7 @@
 				7ED247B31AB999C0001C2C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ED247B41AB999C0001C2C1B /* Build configuration list for PBXNativeTarget "HelloSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +410,7 @@
 				7ED247B61AB999C0001C2C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
